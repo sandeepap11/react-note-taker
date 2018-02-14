@@ -1,4 +1,10 @@
+html, body
+{
+    height: 100%;
+}
+
 .App {
+    height: 100%;
   text-align: center;
 }
 
@@ -21,6 +27,45 @@
 .App-intro {
   font-size: large;
 }
+
+.notes-wrapper{
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.list-notes-top{
+  height: 90%;
+  width: 60%;
+  padding: 0;
+
+}
+
+.current-note{
+
+  height: 500px;
+  width: 30%;
+    border: 1px solid black;
+display: inherit;
+
+}
+
+.list-notes{
+
+
+
+}
+
+.list-item{
+  border-bottom: 1px solid black;
+  list-style: none;
+  text-align: left;
+  height: 30px;
+
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
