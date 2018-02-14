@@ -37,9 +37,11 @@ html, body
 }
 
 .list-notes-top{
-  height: 90%;
+  height: 500px;
   width: 60%;
   padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 
 }
 
@@ -47,8 +49,7 @@ html, body
 
   height: 500px;
   width: 30%;
-    border: 1px solid black;
-display: inherit;
+
 
 }
 
@@ -64,6 +65,26 @@ display: inherit;
   text-align: left;
   height: 30px;
 
+}
+
+input[type='text']{
+
+  height: 30px;
+  width: 100%;
+  border: none;
+  resize: none;
+  color: blue;
+  font-size: 25px;
+
+}
+
+textarea{
+
+  height: 405px;
+  width: 100%;
+  border: none;
+  resize: none;
+  scroll-behavior: auto;
 }
 
 
