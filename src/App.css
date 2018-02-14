@@ -54,18 +54,27 @@ html, body
 
 }
 
-.list-notes{
+.list-item-top{
 
-
-
+  border-bottom: 1px solid black;
+  text-align: left;
 }
 
 .list-item{
-  border-bottom: 1px solid black;
+
   list-style: none;
   text-align: left;
   height: 30px;
+  display: inline-flex;
+  width: 90%;
+}
 
+.delete-button{
+
+  border-radius: 50%;
+  float: right;
+  vertical-align: top;
+  position: absolute;
 }
 
 input[type='text']{
@@ -87,6 +96,8 @@ textarea{
   resize: none;
   scroll-behavior: auto;
 }
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

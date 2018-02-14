@@ -10,11 +10,8 @@ class Note extends Component{
 }
 
 save = (note) => {
-  console.log('saving')
   note.heading = this.textInput.value
   note.value = this.textAreaInput.value
-  console.log(note.heading)
-  console.log(note.value)
   this.props.savenote(note)
 }
   render(){

@@ -6,16 +6,19 @@ class ListNotes extends Component{
 
   render(){
 
-    const {notes, changeCurrentNote} = this.props
+    const {notes, changeCurrentNote, deletenote} = this.props
 return(
 
 
     <ul className='list-notes'>
       { notes.map((note) => (
-
-          <li key={ note.id } className='list-item' onClick={ () => changeCurrentNote(note) } >
+        <div  className='list-item-top' key={ note.id }>
+          <li className='list-item' onClick={ () => changeCurrentNote(note) } >
             {note.heading}
+
           </li>
+          <button className='delete-button' onClick={ () => deletenote(note)}>X</button>
+          </div>
 
       )) }
     </ul>
