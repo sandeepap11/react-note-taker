@@ -38,7 +38,7 @@ html, body
 
 .list-notes-top{
   height: 500px;
-  width: 60%;
+  width: 30%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -48,7 +48,8 @@ html, body
 .current-note{
 
   height: 500px;
-  width: 30%;
+  width: 68%;
+  padding: 10px
 
 
 }
@@ -86,7 +87,6 @@ textarea{
   resize: none;
   scroll-behavior: auto;
 }
-
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

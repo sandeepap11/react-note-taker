@@ -47,9 +47,6 @@ class App extends Component {
       this.state.notes.sort((a, b) => {return b.id-a.id})
     return (
       <div className="App">
-        <p className="App-intro">
-          To get started, just start.
-        </p>
         <div className='notes-wrapper'>
         <div className='list-notes-top'>
           <ListNotes notes={this.state.notes} changeCurrentNote={this.changeCurrentNote}/>
