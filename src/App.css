@@ -1,4 +1,4 @@
-html, body
+html, body, .note-wrapper-single
 {
     height: 100%;
 }
@@ -37,7 +37,7 @@ html, body
 }
 
 .list-notes-top{
-  height: 500px;
+  height: 100%;
   width: 30%;
   padding: 0;
   overflow-y: auto;
@@ -47,9 +47,9 @@ html, body
 
 .current-note{
 
-  height: 500px;
+  height: 100%;
   width: 68%;
-  padding: 10px
+
 
 
 }
@@ -69,18 +69,29 @@ html, body
   width: 90%;
 }
 
-.delete-button{
+.delete-note{
+
+  position: absolute;
+}
+
+.add-note, .delete-note{
 
   border-radius: 50%;
   float: right;
-  vertical-align: top;
-  position: absolute;
+
+
+
+}
+
+.add-note{
+  margin: 20px 440px 10px;
+  
 }
 
 input[type='text']{
 
   height: 30px;
-  width: 100%;
+  width: 90%;
   border: none;
   resize: none;
   color: blue;
@@ -91,7 +102,7 @@ input[type='text']{
 textarea{
 
   height: 405px;
-  width: 100%;
+  width: 90%;
   border: none;
   resize: none;
   scroll-behavior: auto;

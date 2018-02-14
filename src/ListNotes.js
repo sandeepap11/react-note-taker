@@ -17,7 +17,7 @@ return(
             {note.heading}
 
           </li>
-          <button className='delete-button' onClick={ () => deletenote(note)}>X</button>
+          <button className='delete-note' onClick={ () => deletenote(note)}>X</button>
           </div>
 
       )) }
